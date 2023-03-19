@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap');
+*
+{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+a
+{
+    text-decoration: none;
+    color: white;
+    animation: navGlowout 0.5s forwards;
+}
+a:hover
+{
+    color: #FFF200;
+    text-decoration: none;
+    animation: navGlowin 0.5s forwards;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #303841;
+    color: white; 
+}
+nav
+{
+    display: flex;
+    position: fixed;
+    top: 0;
+    background-color: #303841;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    width: 100vw;
+    height: 7vh;
+    font-size: 1.2vw;
+    text-transform: uppercase;
+}
+#home
+{   
+    padding-top: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+#aboutme
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 60vh;
+    margin: auto;
+}
+#aboutme h1
+{
+    display: inline-block;
+    width: fit-content;
+    height: fit-content;
+    margin: 4.5vw;
+    margin-top: 7vh;
+    font-size:2.5vw;
+}#aboutme p
+{
+    display: inline-block;
+    width: fit-content;
+    height: fit-content;
+    font-size: 2vw;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    text-align: justify;
+    color: #bebebe;
+
+}
+#skills
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 60vh;
+    margin: auto;
+}
+#skills h1
+{
+    display: inline-block;
+    width: fit-content;
+    height: fit-content;
+    margin: 4.5vw;
+    margin-top: 7vh;
+    font-size:2.5vw;
+}
+#experience
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 60vh;
+    margin: auto;
+}
+#contact
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 60vh;
+    margin: auto;
+}
+ul
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50vw;
+ 
+}
+li
+{
+    display: inline;
+}
+li.active
+{
+    display: inline;
+    color: #FFF200;
+    text-shadow:   0 0 1px #FFF200,
+                        0 0 2px #FFF200,
+                        0 0 4px #FFF200,
+                        0 0 8px #FFF200,
+                        0 0 16px #FFF200,
+                        0 0 32px #FFF200;
+    
+}
+#particles-js{
+    position: absolute;
+    top: 8vh;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60vh;
+    z-index: -1;
+}
+
+.lefthome
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    height: 100%;
+    float: left;
+    flex-direction: column;
+}
+.righthome
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    height: 100%;
+    float: left;
+}
+.righthome img
+{
+    width: 18vw; 
+    height: auto; 
+    background-color:#D6E6F2; border-radius: 6vw;
+    animation: pictureout 0.3s;
+}
+.righthome img:hover
+{
+    animation: picturein 0.3s forwards;
+}
+
+.lefthome h1{
+    font-size: 3.9vw;
+    animation: headerGlowout 0.3s;
+    margin-bottom:1.5vw;
+}
+.lefthome h1:hover
+{
+    animation: headerGlowin 0.3s forwards;
+}
+.lefthome h2{
+    font-size: 2vw;
+}
+@keyframes headerGlowin
+{
+   100%
+   {   
+    text-shadow: 0 0 2px #EEEEEE,
+                 0 0 4px #EEEEEE,
+                 0 0 8px #EEEEEE,
+                 0 0 16px #EEEEEE,
+                 0 0 32px #EEEEEE,
+                 0 0 64px #EEEEEE;
+    font-size: 4vw;
+}
+}@keyframes headerGlowout{
+    100%
+    {
+        text-shadow:0;
+        font-size: 3.9vw;
+    }
+    0%
+    {   
+        text-shadow: 0 0 2px #EEEEEE,
+        0 0 4px #EEEEEE,
+        0 0 8px #EEEEEE,
+        0 0 16px #EEEEEE,
+        0 0 32px #EEEEEE,
+        0 0 64px #EEEEEE;
+        font-size: 4vw;
+    }
+}
+@keyframes navGlowin
+{
+    100%
+    {
+        text-shadow: 
+        0 0 1px #FFF200,
+        0 0 2px #FFF200,
+        0 0 4px #FFF200,
+        0 0 8px #FFF200,
+        0 0 16px #FFF200,
+        0 0 32px #FFF200;
+        font-size: 1.3vw;
+    }
+ }
+ @keyframes navGlowout{
+    0%{text-shadow:   0 0 1px #FFF200,
+                        0 0 2px #FFF200,
+                        0 0 4px #FFF200,
+                        0 0 8px #FFF200,
+                        0 0 16px #FFF200,
+                        0 0 32px #FFF200;
+                        font-size: 1.3vw;}
+    100%
+    {
+        text-shadow:0; font-size: 1.2vw;
+    }
+}
+@keyframes picturein
+{
+    100%
+    {
+        width: 19vw;
+        box-shadow: 0 0 2px #EEEEEE,
+        0 0 4px #EEEEEE,
+        0 0 8px #EEEEEE,
+        0 0 16px #EEEEEE,
+        0 0 32px #EEEEEE,
+        0 0 64px #EEEEEE; 
+    }
+}@keyframes pictureout
+{
+    0%
+    {
+        width: 19vw;
+        box-shadow: 0 0 2px #EEEEEE,
+        0 0 4px #EEEEEE,
+        0 0 8px #EEEEEE,
+        0 0 16px #EEEEEE,
+        0 0 32px #EEEEEE,
+        0 0 64px #EEEEEE;
+    }
+    100%
+    {
+        width: 18vw;
+        box-shadow: 0;
+    }
+
+}
